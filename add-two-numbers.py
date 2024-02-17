@@ -47,7 +47,6 @@ class Solution:
     def addTwoNumbersProcessor(self, nums1, nums2):
         return unwrapListNode(self.addTwoNumbers(makeListNode(nums1), makeListNode(nums2)))
 
-
 if __name__ == "__main__":
     inputs = [
         ([2,4,3], [5,6,4]),
@@ -55,6 +54,7 @@ if __name__ == "__main__":
         ([0], [0]),
         ([9,9,9,9,9,9,9], [9,9,9,9]),
         ([9,9,9,9], [9,9,9,9,9,9,9]),
+        ([1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1], [5,6,4])
     ]
     outputs = [
         ([7,0,8]),
@@ -62,6 +62,7 @@ if __name__ == "__main__":
         ([0]),
         ([8,9,9,9,0,0,0,1]),
         ([8,9,9,9,0,0,0,1]),
+        ([6,6,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1])
     ]
     x = Solution()
     evaluate(x.addTwoNumbersProcessor, inputs, outputs)
