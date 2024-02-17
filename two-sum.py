@@ -1,4 +1,4 @@
-# link -> https://leetcode.com/problems/two-sum/description/
+# link -> https://leetcode.com/problems/two-sum/
 
 from leetcode import evaluate
 
@@ -25,7 +25,6 @@ class Solution:
                     j += 1
 
 if __name__ == "__main__":
-    print("solving")
     inputs = [
         ([2, 7, 11, 15], 9),
         ([3, 2, 4], 6),
