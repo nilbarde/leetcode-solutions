@@ -6,7 +6,7 @@ def evaluate(function, inputs, outputs):
         else:
             raise Exception(f"Output not matched \n\
     input: {i}\n\
-    output expected: {o}\n\
+    output expected : {o}\n\
     output generated: {function_output}\n")
     print(f"{len(inputs)} solved correctly")
     return True
