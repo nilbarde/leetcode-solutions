@@ -1,5 +1,3 @@
-# link -> https://leetcode.com/problems/sample/
-
 from leetcode import evaluate
 
 class Solution:
