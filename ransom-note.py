@@ -5,6 +5,16 @@ from collections import Counter
 
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        mCount = Counter(magazine)
+        for r in ransomNote:
+            if not r in mCount:
+                return False
+            mCount[r] -= 1
+            if mCount[r] < 0:
+                return False
+        return True
+
+    def canConstructV1(self, ransomNote: str, magazine: str) -> bool:
         rCount = Counter(ransomNote)
         mCount = Counter(magazine)
         for letter, req in rCount.items():
