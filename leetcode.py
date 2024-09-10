@@ -1,5 +1,28 @@
 import time
 
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def makeListNode(numbers):
+    origin = ListNode(numbers[0])
+    last = origin
+    for i in range(1, len(numbers)):
+        node = ListNode(numbers[i])
+        last.next = node
+        last = node
+    return origin
+
+def unwrapListNode(origin):
+    numbers = []
+    node = origin
+    while node:
+        numbers.append(node.val)
+        node = node.next
+    return numbers
+
 def evaluate(function, inputs, outputs, evaluate_time=False):
     for input_num, (i, o) in enumerate(zip(inputs, outputs)):
         a = time.time()
