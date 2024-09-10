@@ -6,7 +6,7 @@ class ListNode:
         self.val = val
         self.next = next
 
-def makeListNode(numbers):
+def makeLinkedList(numbers):
     origin = ListNode(numbers[0])
     last = origin
     for i in range(1, len(numbers)):
@@ -15,7 +15,7 @@ def makeListNode(numbers):
         last = node
     return origin
 
-def unwrapListNode(origin):
+def makeList(origin):
     numbers = []
     node = origin
     while node:
