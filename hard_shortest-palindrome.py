@@ -18,13 +18,13 @@ class Solution:
 
 if __name__ == "__main__":
     inputs = [
-        # ("aacecaaa", ),
-        # ("abcd", ),
+        ("aacecaaa", ),
+        ("abcd", ),
         ("abbacd", )
     ]
     outputs = [
-        # ("aaacecaaa"),
-        # ("dcbabcd"),
+        ("aaacecaaa"),
+        ("dcbabcd"),
         ("dcabbacd")
     ]
     x = Solution()
